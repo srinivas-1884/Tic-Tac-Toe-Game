@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tic Tac Toe — Offline & Online (P2P)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Tic Tac Toe</h1>
+
+  <div class="mode-select">
+    <button id="offline-btn">Play Offline</button>
+    <button id="host-btn">Host Online Game</button>
+  </div>
+
+  <div id="link-area" class="hidden" 
+     style="margin-top:10px; color:#0ff; font-weight:bold;"></div>
+
+
+
+  <div class="player-indicator">
+    <span id="player-x" class="active">X</span>
+    <span id="player-o">O</span>
+  </div>
+
+  <div id="status">Select a mode to start</div>
+
+  <div id="scoreboard">
+    <div>X Wins: <span id="x-score">0</span></div>
+    <div>O Wins: <span id="o-score">0</span></div>
+    <div>Draws: <span id="draw-score">0</span></div>
+  </div>
+
+  <div id="game-board"></div>
+
+  <div class="buttons">
+    <button id="restart-btn">Restart Game</button>
+    <button id="startover-btn">Start Over</button>
+  </div>
+
+  <div id="winner-banner" class="hidden"></div>
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- Firebase (modular v9) -->
+  <script type="module" src="script.js"></script>
+</body>
+</html>
