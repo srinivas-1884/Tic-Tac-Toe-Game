@@ -20,3 +20,4 @@ A simple Tic Tac Toe game that can be played in hot-seat mode or online with a f
 
 ## License
 MIT License
+<!-- timestamp refresh -->
